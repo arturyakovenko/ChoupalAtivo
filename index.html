@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Choupal Ativo - Início</title>
+    <link rel="shortcut icon" href="imgs/logo.png">
+    <script src="js/tailwind4.1.js"></script>
+</head>
+<body class="bg-gray-100">
+    
+    <nav class="bg-black text-white p-4 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <img class="h-10 w-auto" src="imgs/logo.png" alt="Choupal Ativo Logo">
+                <span class="text-2xl font-bold">Choupal Ativo</span>
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html" class="text-white font-bold border-b-2 border-green-400">Início</a>
+                <a href="proximos_eventos.html" class="text-gray-300 hover:text-white hover:border-b-2 border-green-400">Próximos Eventos</a>
+                <a href="sabados_ativos.html" class="text-gray-300 hover:text-white hover:border-b-2 border-green-400">Sábados Ativos</a>
+            </div>
+            <div class="flex items-center md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="relative h-screen overflow-hidden">
+        <img src="fts/index-hero-ponte1.jpg" class="absolute top-0 left-0 w-full h-full object-cover z-0" alt="Ponte no Choupal">
+        <div class="absolute inset-0 bg-black opacity-60 z-10"></div>
+
+        <div class="absolute bottom-20 left-10 bg-black bg-opacity-75 p-3 rounded-md text-white z-20">
+            <span class="block text-sm text-gray-300">Location:</span>
+            <span class="text-lg">Portugal, Coimbra</span>
+        </div>
+    </div>
+
+    <div class="relative h-[60vh] overflow-hidden">
+        <img src="fts/index-treina.jpg" class="absolute top-0 left-0 w-full h-full object-cover z-0" alt="Pessoas a treinar">
+        <div class="absolute inset-0 bg-black opacity-40 z-10"></div>
+
+        <div class="relative h-full flex items-center justify-center z-20">
+            <div class="text-center text-white p-4" style="text-shadow: 2px 2px 4px #000000;"> <h1 class="text-6xl font-bold">Treina ao ar livre,</h1>
+                <h2 class="text-6xl font-bold">vive em movimento.</h2>
+                <p class="mt-4 text-lg max-w-xl">
+                    Descobre as nossas aulas de Yoga, Pilates e Treino Funcional. 
+                    Junta-te a uma comunidade ativa em harmonia com a natureza.
+                </p>
+                <a href="sabados_ativos.html" class="mt-8 inline-block bg-green-500 text-white font-bold py-3 px-6 rounded-lg text-lg hover:bg-green-700">
+                    MARCA JÁ
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="relative h-[70vh] overflow-hidden">
+            <img src="fts/index-basket.webp" class="absolute top-0 left-0 w-full h-full object-cover z-0" alt="Campo de Basket">
+            <div class="absolute inset-0 bg-black opacity-40 z-10"></div>
+            <div class="relative h-full flex flex-col justify-between p-10 z-20">
+            
+
+                <h2 class="text-white text-7xl font-bold" style="text-shadow: 2px 2px 4px #000000;">Basket</h2>
+                <a href="#" class="inline-block bg-green-500 text-white font-bold py-2 px-4 rounded-md text-sm self-start hover:bg-green-700">
+                    VER DISPONIBILIDADE
+                </a>
+            </div>
+        </div>
+        
+        <div class="relative h-[70vh] overflow-hidden">
+            <img src="fts/index-tenis.jpeg" class="absolute top-0 left-0 w-full h-full object-cover z-0" alt="Campo de Ténis">
+            <div class="absolute inset-0 bg-black opacity-40 z-10"></div>
+            <div class="relative h-full flex flex-col justify-between p-10 z-20">
+            
+
+                <h2 class="text-white text-7xl font-bold" style="text-shadow: 2px 2px 4px #000000;">Ténis + Padel</h2>
+                <a href="#" class="inline-block bg-gray-700 bg-opacity-80 text-white font-bold py-2 px-4 rounded-md text-sm self-start hover:bg-black">
+                    VER DISPONIBILIDADE
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="relative h-[70vh] overflow-hidden">
+        <img src="fts/index-social.avif" class="absolute top-0 left-0 w-full h-full object-cover z-0" alt="Responsabilidade Social">
+        <div class="absolute inset-0 bg-black opacity-40 z-10"></div>
+        <div class="relative h-full flex items-center justify-center z-20">
+
+            <div class="text-center text-white max-w-3xl mx-auto px-4" style="text-shadow: 2px 2px 4px #000000;">
+                <h2 class="text-4xl font-semibold">
+                    No Choupal, acreditamos que responsabilidade social é
+                    cuidar do que é de todos.
+                </h2>
+                <h3 class="text-3xl mt-4">
+                    Junta-te a nós para manter este espaço verde, ativo e acolhedor.
+                </h3>
+                <a href="proximos_eventos.html" class="mt-8 inline-block border-2 border-white text-white font-bold py-2 px-5 rounded-lg text-md hover:bg-white hover:text-black">
+                    INSCREVE-TE
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="relative text-white overflow-hidden">
+        <img src="fts/footer-parque1.jpg" class="absolute top-0 left-0 w-full h-full object-cover z-0" alt="Parque à noite">
+        <div class="absolute inset-0 bg-black opacity-60 z-10"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 py-20 z-20" style="text-shadow: 2px 2px 4px #000000;">
+            <div class="mb-10">
+                <h3 class="text-8xl font-bold">Choupal Ativo</h3>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Contactos</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Email: ativo@choupal.pt</li>
+                        <li>Tel: +351 911 765 373</li>
+                        <li>Tel: +351 925 142 755</li>
+                    </ul>
+                </div>
+
+                <div></div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

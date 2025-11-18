@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Choupal Ativo - Personal Trainers</title>
+    
+    <link rel="shortcut icon" href="imgs/logo.png">
+    <script src="js/tailwind4.1.js"></script>
+
+    <style>
+      html { scroll-behavior: smooth; }
+    </style>
+</head>
+
+<body class="bg-gray-100" id="topo">
+    
+    <nav class="bg-black text-white p-4 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <img class="h-10 w-auto" src="imgs/logo.png" alt="Choupal Ativo Logo">
+                <span class="text-2xl font-bold">Choupal Ativo</span>
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html" class="text-gray-300 hover:text-white hover:border-b-2 border-green-400">Início</a>
+                <a href="proximos_eventos.html" class="text-gray-300 hover:text-white hover:border-b-2 border-green-400">Próximos Eventos</a>
+                <a href="sabados_ativos.html" class="text-white font-bold border-b-2 border-green-400">Sábados Ativos</a>
+            </div>
+            <div class="flex items-center md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-8">
+
+            <h2 class="text-5xl font-bold text-center text-gray-900">Os Nossos Personal Trainers</h2>
+            <p class="text-xl text-center text-gray-600 mt-4 max-w-2xl mx-auto">Reserve uma aula particular com os nossos especialistas e atinja os seus objetivos.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-16">
+
+                <div class="bg-gray-50 rounded-lg shadow-xl overflow-hidden">
+                    <img class="w-full h-80 object-cover" src="fts/pt-ana.jpg" alt="Personal Trainer Ana Silva">
+                    <div class="p-8">
+                        <h3 class="text-3xl font-bold text-gray-900">Ana Silva</h3>
+                        <p class="text-green-600 font-semibold text-lg mt-1">Especialista em Yoga & Pilates</p>
+                        
+                        <blockquote class="mt-4 text-gray-700 italic border-l-4 border-green-500 pl-4">
+                            "Acredito que o movimento é a chave para uma vida equilibrada. No Choupal, encontramos a paz para conectar corpo e mente."
+                        </blockquote>
+
+                        <div class="mt-6">
+                            <h4 class="text-xl font-semibold">Contactos:</h4>
+                            <ul class="list-disc list-inside text-gray-700 mt-2">
+                                <li>Email: ana.silva@choupalativo.pt</li>
+                                <li>Tel: +351 911 222 333</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg shadow-xl overflow-hidden">
+                    <img class="w-full h-80 object-cover" src="fts/pt-rui.jpg" alt="Personal Trainer Rui Mendes">
+                    <div class="p-8">
+                        <h3 class="text-3xl font-bold text-gray-900">Rui Mendes</h3>
+                        <p class="text-green-600 font-semibold text-lg mt-1">Especialista em Crossfit & Cárdio</p>
+                        
+                        <blockquote class="mt-4 text-gray-700 italic border-l-4 border-green-500 pl-4">
+                            "Treinar ao ar livre leva a tua performance a outro nível. O meu objetivo é simples: puxar por ti até atingires o teu melhor."
+                        </blockquote>
+                        
+                        <div class="mt-6">
+                            <h4 class="text-xl font-semibold">Contactos:</h4>
+                            <ul class="list-disc list-inside text-gray-700 mt-2">
+                                <li>Email: rui.mendes@choupalativo.pt</li>
+                                <li>Tel: +351 922 333 444</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer id="contactos" class="relative text-white overflow-hidden">
+        <img src="fts/footer-parque.jpg" class="absolute top-0 left-0 w-full h-full object-cover z-0" alt="Parque à noite">
+        
+        <div class="relative max-w-7xl mx-auto px-4 py-20 z-20" style="text-shadow: 2px 2px 4px #000000;">
+            <div class="mb-10">
+                <h3 class="text-8xl font-bold">Choupal Ativo</h3>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Contactos</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Email: ativo@choupal.pt</li>
+                        <li>Tel: +351 911 765 373</li>
+                        <li>Tel: +351 925 142 755</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Redes Sociais</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 border-2 border-white rounded-full flex items-center justify-center hover:bg-white hover:text-black">...</a>
+                        <a href="#" class="w-10 h-10 border-2 border-white rounded-full flex items-center justify-center hover:bg-white hover:text-black">...</a>
+                        <a href="#" class="w-10 h-10 border-2 border-white rounded-full flex items-center justify-center hover:bg-white hover:text-black">...</a>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </footer>
+    <a href="#topo" class="fixed bottom-8 right-8 z-50 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-700">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+        </svg>
+    </a>
+    
+</body>
+</html>
